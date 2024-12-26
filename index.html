@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas del diablo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Pirata+One&display=swap" rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
+<body>
+    <header class="encabezado">
+        <img src="./assets/logo.png" alt="Logo de la pagina" class="logo_tienda">
+        <h1 class="nombre_tienda">Tienda del diablo</h1>
+    </header>
+    <main>
+        <!-- Botón para mostrar/ocultar -->
+        <div class="contenedor_mostrar_formulario">
+            <button class="boton_mostrar_formulario">➕ ¿Encontraste una Fruta? Agregala al stock</button>
+        </div>
+        <form class="agregar_fruta  esconder_formulario" data-formulario>
+            <input type="text" placeholder="Nombre..." data-nombre>
+            <input type="text" placeholder="Imagen..." data-imagen>
+            <input type="text" placeholder="Precio en berries..." data-precio>
+            <div class="botones_agregar_frutas">
+                <button type="submit" class="boton_enviar"> Enviar </button>
+                <button type="reset" class="boton_reset"> Limpiar </button>
+            </div>
+        </form>
+        <section class="stock_frutas">
+            <ul class="contenedor_lista" data-lista>
+                <!-- <li class="fruta_item">
+                    <img src="https://m.media-amazon.com/images/I/61aa5GduiDL._AC_UF1000,1000_QL80_.jpg" alt="Fruta del diablo Gomu Gomu no Mi" class="imagen_fruta">
+                    <div class="descripcion_imagen">
+                        <h3>Gomu Gomu no Mi</h3>
+                        <div class="descripcion_precio">
+                            <p>10,000,000.00</p>
+                            <button>
+                                <img class="icono_eliminar" src="./assets/icono_basura.png" alt="icono de eliminar">
+                            </button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="fruta_item">
+                    <img src="https://ih1.redbubble.net/image.1665194595.2981/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Fruta del diablo Awa Awa no Mi" class="imagen_fruta">
+                    <div class="descripcion_imagen">
+                        <h3>Awa Awa no Mi</h3>
+                        <div class="descripcion_precio">
+                            <p>5,000,000.00</p>
+                            <button>
+                                <img class="icono_eliminar" src="./assets/icono_basura.png" alt="icono de eliminar">
+                            </button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="fruta_item">
+                    <img src="https://fbi.cults3d.com/uploaders/19290130/illustration-file/2d58f3ed-1816-4c68-ab4b-a992216b6c2c/bomu.png" alt="Fruta del diablo Awa Awa no Mi" class="imagen_fruta">
+                    <div class="descripcion_imagen">
+                        <h3>Bomu Bomu no Mi</h3>
+                        <div class="descripcion_precio">
+                            <p>2,000,000.00</p>
+                            <button>
+                                <img class="icono_eliminar" src="./assets/icono_basura.png" alt="icono de eliminar">
+                            </button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="fruta_item">
+                    <img src="https://erikstore.com/blog/wp-content/uploads/2024/01/Fruta_Mera_Mera.jpg" alt="Fruta del diablo Awa Awa no Mi" class="imagen_fruta">
+                    <div class="descripcion_imagen">
+                        <h3>Mera Mera no Mi</h3>
+                        <div class="descripcion_precio">
+                            <p>10,000,000.00</p>
+                            <button>
+                                <img class="icono_eliminar" src="./assets/icono_basura.png" alt="icono de eliminar">
+                            </button> 
+                        </div>
+                    </div>
+                </li>
+                 -->
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script src="./scripts/mostrarVideos.js" type="module"></script>
+    <script src="./scripts/crearVideo.js" type="module"></script>
+    
+</body>
+</html>
